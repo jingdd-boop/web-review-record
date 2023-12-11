@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Stage 2</title>
+</head>
+<body>
+  <script src="module-a.js"></script>
+  <script src="module-b.js"></script>
+  <script>
+    moduleA.method1()
+    moduleB.method1()
+    // 模块成员依然可以被修改
+    moduleA.data = 'foo'
+  </script>
+</body>
+</html>
+
+<!-- 这种命名空间的方式只是解决了命名冲突的问题，但是其它问题依旧存在。 -->
